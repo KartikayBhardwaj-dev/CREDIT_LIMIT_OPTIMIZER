@@ -12,5 +12,8 @@
 ## NAIVE BAYES(PROBABILITIC): Uses bayes theorem and assumes feature independence 
 ## K-NEAREST NEIGHBOURS(DISTANCE-BASSED): A point's class depends on nearest neighbours, sensitive to scaling, slow for large datasets, usefull in small datasets
 ## SUPPORT VECTOR MACHINE(SVM)(MARGIN-BASSED): Finds a maximum margin boundary between classes, effective in high dimensional, slower on larger dataset, good on clear seperations
-## Setup.py has a function which reads file requirements.txt and install all packages inside it 
-## requirements.txt contains all packages needed for project
+## Setup.py -> has a function which reads file requirements.txt and install all packages inside it 
+## requirements.txt -> contains all packages needed for project
+## exception.py -> this file handles error display custom error messages
+## logger.py -> logs everything error, succeffull commands , in a file, keeps track of project 
+ 
