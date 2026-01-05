@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Risk Result</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 50px; }
+        .low { color: green; }
+        .medium { color: orange; }
+        .high { color: red; }
+    </style>
+</head>
+<body>
+
+    <h2>Credit Risk Assessment</h2>
+
+    <h3>Risk Score: {{ risk_score }}/100</h3>
+
+    {% if risk_category == "Low Risk" %}
+        <h3 class="low">Risk Category: {{ risk_category }}</h3>
+    {% elif risk_category == "Medium Risk" %}
+        <h3 class="medium">Risk Category: {{ risk_category }}</h3>
+    {% else %}
+        <h3 class="high">Risk Category: {{ risk_category }}</h3>
+    {% endif %}
+
+    <h2>Recommended Credit Limit</h2>
+    <h1>₹ {{ credit_limit }}</h1>
+
+    <br>
+    <a href="/">Check Another Customer</a>
+
+</body>
+</html>

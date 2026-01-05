@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Risk Predictor</title>
+</head>
+<body>
+    <h2>Credit Risk Prediction</h2>
+
+    <form action="/predict" method="post">
+        <label>Credit Limit:</label>
+        <input type="number" name="LIMIT_BAL" required><br><br>
+
+        <label>Gender (1=Male, 2=Female):</label>
+        <input type="number" name="SEX" required><br><br>
+
+        <label>Education (1–Graduate, 2–University, 3–High School):</label>
+        <input type="number" name="EDUCATION" required><br><br>
+
+        <label>Marriage (1=Married, 2=Single):</label>
+        <input type="number" name="MARRIAGE" required><br><br>
+
+        <label>Age:</label>
+        <input type="number" name="AGE" required><br><br>
+        <h3>Repayment Status (Last 6 Months)</h3>
+PAY_0 <input type="number" name="PAY_0" required><br>
+PAY_2 <input type="number" name="PAY_2" required><br>
+PAY_3 <input type="number" name="PAY_3" required><br>
+PAY_4 <input type="number" name="PAY_4" required><br>
+PAY_5 <input type="number" name="PAY_5" required><br>
+PAY_6 <input type="number" name="PAY_6" required><br>
+
+<h3>Bill Amounts</h3>
+BILL_AMT1 <input type="number" name="BILL_AMT1" required><br>
+BILL_AMT2 <input type="number" name="BILL_AMT2" required><br>
+BILL_AMT3 <input type="number" name="BILL_AMT3" required><br>
+BILL_AMT4 <input type="number" name="BILL_AMT4" required><br>
+BILL_AMT5 <input type="number" name="BILL_AMT5" required><br>
+BILL_AMT6 <input type="number" name="BILL_AMT6" required><br>
+
+<h3>Payment Amounts</h3>
+PAY_AMT1 <input type="number" name="PAY_AMT1" required><br>
+PAY_AMT2 <input type="number" name="PAY_AMT2" required><br>
+PAY_AMT3 <input type="number" name="PAY_AMT3" required><br>
+PAY_AMT4 <input type="number" name="PAY_AMT4" required><br>
+PAY_AMT5 <input type="number" name="PAY_AMT5" required><br>
+PAY_AMT6 <input type="number" name="PAY_AMT6" required><br>
+
+        <button type="submit">Predict Risk</button>
+    </form>
+    
+</body>
+</html>
